@@ -157,16 +157,10 @@ const Portfolio = () => {
               A comprehensive overview of my research publications, conference presentations, 
               professional development, and academic achievements.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary-hover">
-                <Download className="mr-2 h-5 w-5" />
-                Download Full CV
-              </Button>
-              <Button size="lg" variant="outline">
-                <ExternalLink className="mr-2 h-5 w-5" />
-                View Google Scholar
-              </Button>
-            </div>
+            <Button size="lg" variant="outline">
+              <ExternalLink className="mr-2 h-5 w-5" />
+              View Google Scholar
+            </Button>
           </div>
         </div>
       </section>
@@ -176,7 +170,7 @@ const Portfolio = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <Tabs defaultValue="publications" className="w-full">
-              <TabsList className="grid w-full grid-cols-4 mb-8">
+              <TabsList className="grid w-full grid-cols-3 mb-8">
                 <TabsTrigger value="publications" className="flex items-center space-x-2">
                   <BookOpen className="h-4 w-4" />
                   <span>Publications</span>
@@ -188,10 +182,6 @@ const Portfolio = () => {
                 <TabsTrigger value="training" className="flex items-center space-x-2">
                   <Users className="h-4 w-4" />
                   <span>Training</span>
-                </TabsTrigger>
-                <TabsTrigger value="awards" className="flex items-center space-x-2">
-                  <Award className="h-4 w-4" />
-                  <span>Awards</span>
                 </TabsTrigger>
               </TabsList>
 
@@ -329,35 +319,6 @@ const Portfolio = () => {
                 ))}
               </TabsContent>
 
-              {/* Awards Tab */}
-              <TabsContent value="awards" className="space-y-6">
-                <div className="text-center mb-8">
-                  <h2 className="text-2xl font-bold mb-2">Awards & Recognition</h2>
-                  <p className="text-muted-foreground">Academic achievements and honors</p>
-                </div>
-                
-                {awards.map((award, index) => (
-                  <Card key={index} className="chemistry-card">
-                    <CardContent className="p-6">
-                      <div className="flex items-start space-x-4">
-                        <div className="flex-shrink-0">
-                          <div className="w-12 h-12 bg-chemistry-orange/10 rounded-full flex items-center justify-center">
-                            <Award className="h-6 w-6 text-chemistry-orange" />
-                          </div>
-                        </div>
-                        <div className="flex-1">
-                          <div className="flex justify-between items-start mb-2">
-                            <h3 className="text-lg font-semibold text-foreground">{award.title}</h3>
-                            <Badge variant="outline">{award.year}</Badge>
-                          </div>
-                          <p className="text-muted-foreground font-medium mb-2">{award.organization}</p>
-                          <p className="text-sm text-muted-foreground">{award.description}</p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </TabsContent>
             </Tabs>
           </div>
         </div>

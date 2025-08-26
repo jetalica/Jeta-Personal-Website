@@ -58,19 +58,6 @@ const HeroSection = () => {
             </p>
           </div>
 
-          {/* Quick Action Buttons */}
-          <div className="slide-up mb-12" style={{ animationDelay: '0.4s' }}>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" className="group bg-primary hover:bg-primary-hover text-primary-foreground">
-                <Download className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                Download CV
-              </Button>
-              <Button size="lg" variant="outline" className="group border-primary/20 hover:border-primary/40">
-                <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                Get in Touch
-              </Button>
-            </div>
-          </div>
 
           {/* Quick Links */}
           <div className="slide-up mb-12" style={{ animationDelay: '0.6s' }}>

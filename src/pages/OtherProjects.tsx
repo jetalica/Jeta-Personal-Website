@@ -166,13 +166,18 @@ const OtherProjects = () => {
                     </div>
                     
                     {/* Action Buttons */}
-                    <div className="flex space-x-2 pt-4">
-                      <Button size="sm" variant="outline" className="flex-1">
+                    <div className="pt-4">
+                      <Button 
+                        size="sm" 
+                        variant="outline" 
+                        className="w-full"
+                        onClick={() => {
+                          // TODO: Implement project details modal or navigation
+                          console.log(`Viewing details for: ${project.title}`);
+                        }}
+                      >
                         <ExternalLink className="h-4 w-4 mr-2" />
-                        Details
-                      </Button>
-                      <Button size="sm" variant="outline">
-                        <Github className="h-4 w-4" />
+                        View Details
                       </Button>
                     </div>
                   </CardContent>
