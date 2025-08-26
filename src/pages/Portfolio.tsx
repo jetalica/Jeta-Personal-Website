@@ -7,112 +7,68 @@ import { ExternalLink, Download, Calendar, MapPin, Award, BookOpen, Users, Prese
 const Portfolio = () => {
   const publications = [
     {
-      title: "Green Catalytic Processes for Industrial Waste Treatment: A Comprehensive Review",
-      authors: "J. Smith, A. Johnson, M. Chen",
-      journal: "Journal of Environmental Chemistry",
-      year: "2024",
-      status: "Published",
-      impact: "Q1 Journal, IF: 4.2",
-      doi: "10.1016/j.envche.2024.01.001",
-      type: "Review Article"
-    },
-    {
-      title: "Novel Bio-based Catalysts for Sustainable Organic Synthesis",
-      authors: "J. Smith, P. Williams, R. Davis",
-      journal: "Green Chemistry",
+      title: "Solid state synthesis of hydroxyapatite from different precursors",
+      authors: "A. Mele, L. Gjurgjaj, J. Lica, A. Mema, A. Mele, F. Baldassarre, D. Siliqi",
+      journal: "Journal of Dental Materials",
       year: "2023",
       status: "Published",
-      impact: "Q1 Journal, IF: 5.1",
-      doi: "10.1039/d3gc01234a",
+      doi: "https://doi.org/10.1016/j.dental.2023.08.086",
       type: "Research Article"
     },
     {
-      title: "Microplastic Detection Using AI-Enhanced Spectroscopy",
-      authors: "J. Smith, L. Anderson, K. Brown",
-      journal: "Environmental Science & Technology",
-      year: "2024",
-      status: "Under Review",
-      impact: "Q1 Journal, IF: 6.8",
-      type: "Research Article"
-    },
-    {
-      title: "Photocatalytic Water Treatment: From Laboratory to Industrial Scale",
-      authors: "J. Smith, T. Wilson",
-      journal: "Applied Catalysis B: Environmental",
-      year: "2024",
-      status: "In Preparation",
-      impact: "Q1 Journal, IF: 7.2",
+      title: "Changes in surface and structure of montmorillonite by acid activation",
+      authors: "A. Mele, L. Gjurgjaj, J. Lica, A. Mema, A. Mele",
+      journal: "Journal of Dental Materials",
+      year: "2023",
+      status: "Published",
+      doi: "https://www.sciencedirect.com/science/article/abs/pii/S0109564123002506?via%3Dihub",
       type: "Research Article"
     }
-  ];
+   ];
 
   const conferences = [
     {
-      title: "Green Chemistry & Engineering Conference 2024",
-      presentation: "Sustainable Catalytic Processes for Environmental Remediation",
-      location: "Berlin, Germany",
-      date: "June 2024",
-      type: "Oral Presentation",
-      award: "Best Student Presentation Award"
-    },
-    {
-      title: "International Conference on Environmental Chemistry",
-      presentation: "AI-Driven Microplastic Detection in Aquatic Systems",
-      location: "San Francisco, USA",
-      date: "March 2024",
-      type: "Poster Presentation",
-      award: null
-    },
-    {
-      title: "European Symposium on Industrial Chemistry",
-      presentation: "Scale-up Challenges in Green Catalytic Processes",
-      location: "Amsterdam, Netherlands",
-      date: "September 2023",
-      type: "Invited Speaker",
-      award: null
-    },
-    {
-      title: "Young Researchers in Chemistry Symposium",
-      presentation: "Photocatalytic Approaches to Sustainable Synthesis",
+      title: "Materials and Methodologies for Biomedical Applications ",
+      presentation: "Simultaneous Thermal Analysis of high pressure impregnated PMMA for dental applications",
       location: "Online",
-      date: "May 2023",
+      date: "September 2023",
       type: "Oral Presentation",
-      award: "Outstanding Presentation Recognition"
+      award: null
+    },
+    {
+      title: "GEHPT and ESS-HPT 2022",
+      presentation: "The Fatty Acid Analysis of Vitex Agnus Castus Extracts Obtained by Liquid CO2",
+      location: "Maribor, Slovenia",
+      date: "July 2022",
+      type: "Oral Presentation",
+      award: null
+    },
+    {
+      title: "The 3rd International Conference on Applied Sciences and Engineering 2022",
+      presentation: "Determination of the free fatty acid profile of chaste tree ripe fruit",
+      location: "Tirana, Albania",
+      date: "September 2022",
+      type: "Oral Presentation",
+      award: null
+    },
+    {
+      title: "Progress in Dental Materials and Digital Engineering",
+      presentation: "Solid state synthesis of hydroxyapatite from different precursors",
+      location: "Athens, Greece",
+      date: "September 2022",
+      type: "Oral Presentation",
+      award: null
     }
   ];
 
   const trainings = [
     {
-      title: "Advanced Spectroscopic Techniques",
-      provider: "International Chemistry Institute",
-      date: "February 2024",
-      duration: "2 weeks",
-      credential: "Certificate of Completion",
-      skills: ["FTIR", "NMR", "Mass Spectrometry", "Data Analysis"]
-    },
-    {
-      title: "Machine Learning for Chemical Applications",
-      provider: "Tech University Online",
-      date: "November 2023",
-      duration: "6 weeks",
-      credential: "Professional Certificate",
-      skills: ["Python", "TensorFlow", "Chemical Informatics", "Data Mining"]
-    },
-    {
-      title: "Green Chemistry Principles and Applications",
-      provider: "Green Chemistry Institute",
-      date: "August 2023",
+      title: "Service Training for Netzsch Thermal Analysis devices",
+      provider: "Netzsch-Gerätebau GmbH",
+      date: "September 2023",
       duration: "1 week",
-      credential: "Certification",
-      skills: ["Sustainable Design", "Life Cycle Assessment", "Process Optimization"]
-    },
-    {
-      title: "Project Management in Research",
-      provider: "Academic Leadership Center",
-      date: "March 2023",
-      duration: "3 days",
-      credential: "Workshop Certificate",
-      skills: ["Project Planning", "Team Leadership", "Budget Management", "Risk Assessment"]
+      credential: "Certificate of Completion",
+      skills: ["TGA", "DSC", "STA", "Thermal Analysis"]
     }
   ];
 
@@ -154,10 +110,13 @@ const Portfolio = () => {
               Academic <span className="gradient-text">Portfolio</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              A comprehensive overview of my research publications, conference presentations, 
-              professional development, and academic achievements.
+            Overview of My Research Publications, Conference Contributions, and Professional Development.
             </p>
-            <Button size="lg" variant="outline">
+            <Button 
+              size="lg" 
+              variant="outline"
+              onClick={() => window.open("https://scholar.google.com/citations?user=vopty4UAAAAJ&hl=en", "_blank")}
+            >
               <ExternalLink className="mr-2 h-5 w-5" />
               View Google Scholar
             </Button>
@@ -213,22 +172,25 @@ const Portfolio = () => {
                       </p>
                       
                       <div className="flex flex-wrap gap-2 mb-4">
-                        <span className="px-2 py-1 text-xs bg-accent/10 text-accent rounded">
-                          {pub.impact}
-                        </span>
+                        {pub.impact && (
+                          <span className="px-2 py-1 text-xs bg-accent/10 text-accent rounded">
+                            {pub.impact}
+                          </span>
+                        )}
                         {pub.doi && (
                           <span className="px-2 py-1 text-xs bg-muted text-muted-foreground rounded font-mono">
-                            DOI: {pub.doi}
+                            {pub.doi.startsWith('http') ? (
+                              <a href={pub.doi} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                                View Article
+                              </a>
+                            ) : (
+                              `DOI: ${pub.doi}`
+                            )}
                           </span>
                         )}
                       </div>
                       
-                      {pub.status === 'Published' && (
-                        <Button size="sm" variant="outline">
-                          <ExternalLink className="h-4 w-4 mr-2" />
-                          View Article
-                        </Button>
-                      )}
+                        
                     </CardContent>
                   </Card>
                 ))}

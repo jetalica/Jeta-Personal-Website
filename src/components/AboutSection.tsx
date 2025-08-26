@@ -6,25 +6,25 @@ const AboutSection = () => {
     {
       icon: GraduationCap,
       title: 'PhD Candidate',
-      description: 'Industrial & Environmental Chemistry',
+      description: 'PhD Candidate in Chemistry',
       color: 'text-primary'
     },
     {
       icon: Microscope,
       title: 'Research Focus',
-      description: 'Green Chemistry & Sustainable Processes',
+      description: 'Phosphorus Recovery & Waste Valorization',
       color: 'text-accent'
     },
     {
       icon: Leaf,
       title: 'Specialization',
-      description: 'Environmental Impact Reduction',
+      description: 'Circular Economy & Green Chemistry',
       color: 'text-molecular'
     },
     {
       icon: Target,
       title: 'Goal',
-      description: 'Advancing Sustainable Science',
+      description: 'Waste-to-Value Solutions',
       color: 'text-chemistry-orange'
     }
   ];
@@ -39,8 +39,7 @@ const AboutSection = () => {
               About My <span className="gradient-text">Research</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Dedicated to developing innovative chemical solutions that address environmental challenges 
-              while maintaining industrial efficiency and sustainability.
+            My PhD research is all about turning a major environmental challenge into a sustainable solution 💡. I'm focusing on sewage sludge, which is typically seen as just waste. However, it's actually a rich source of phosphorus, a non-renewable nutrient that is absolutely essential for the fertilizers that grow our food. My project involves developing an innovative and eco-friendly process to efficiently recover this phosphorus, transforming it from a potential pollutant into a valuable resource. The ultimate goal is to create a true circular economy model ♻️, where we close the loop by taking waste, reclaiming a critical element, and creating a sustainable raw material that supports our environment and global food security.
             </p>
           </div>
 
@@ -71,22 +70,13 @@ const AboutSection = () => {
               
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  As a PhD candidate in Industrial and Environmental Chemistry, I focus on developing 
-                  sustainable chemical processes that minimize environmental impact while maintaining 
-                  industrial viability. My research combines theoretical knowledge with practical 
-                  applications to address real-world environmental challenges.
+                I'm a materials science researcher 🔬 passionate about sustainability and innovation. My work is centered on a simple but powerful idea: transforming overlooked materials—like waste products or natural resources—into valuable new products for industry, agriculture, and healthcare. Essentially, I find hidden value where others see waste, developing practical, eco-friendly solutions to real-world problems.
                 </p>
                 
                 <p>
-                  My work spans across green chemistry principles, catalysis development, and 
-                  environmental remediation technologies. I am particularly interested in creating 
-                  innovative solutions that can be scaled for industrial implementation.
+                My current PhD research puts this directly into practice by tackling a major environmental challenge: sewage sludge. Instead of treating it as a disposal problem, I see it as a rich source of resources. I'm developing an innovative process to recover phosphorus ♻️, a non-renewable nutrient that is absolutely vital for the fertilizers that grow our food. This project aims to create a true circular economy model, turning a waste management issue into a sustainable solution that protects our environment and supports global food security. This hands-on approach to creating value is a common thread throughout my work. I have experience designing advanced materials from the ground up, such as engineering next-generation nanomaterials for better dental applications, and I specialize in using eco-friendly "green chemistry" techniques, like using clean CO₂ to isolate potent antimicrobial extracts from medicinal plants 🌱. Ultimately, my work connects the dots between the lab and the real world, focusing on designing smarter systems where resources are continuously reused to build a more sustainable future. 💡
                 </p>
-                
-                <p>
-                  Through interdisciplinary collaboration and cutting-edge research methodologies, 
-                  I aim to contribute to the global effort of creating a more sustainable chemical industry.
-                </p>
+              
               </div>
 
               {/* Research Interests */}
@@ -94,12 +84,11 @@ const AboutSection = () => {
                 <h4 className="font-semibold mb-3 text-foreground">Key Research Areas:</h4>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    'Green Catalysis',
-                    'Process Optimization',
-                    'Environmental Remediation',
-                    'Sustainable Synthesis',
-                    'Waste Minimization',
-                    'Life Cycle Assessment'
+                    'Circular Economy',
+                    'Waste Valorisation',
+                    'Phosphorus Recovery',
+                    'Sustainable Materials',
+                    'Industrial Process Optimisation'
                   ].map((area) => (
                     <span
                       key={area}
@@ -124,8 +113,7 @@ const AboutSection = () => {
                 
                 <h4 className="text-xl font-semibold mb-2 text-foreground">Research Philosophy</h4>
                 <p className="text-muted-foreground italic">
-                  "Innovation in chemistry should serve both industry and environment, 
-                  creating solutions that are economically viable and ecologically responsible."
+                  "I believe that research should generate tangible benefits for society while advancing scientific knowledge. My approach combines rigorous experimentation, data-driven optimisation, and interdisciplinary collaboration to develop solutions that are not only innovative but also practical and environmentally responsible. Sustainability, efficiency, and real-world applicability guide every stage of my work."
                 </p>
               </div>
             </div>

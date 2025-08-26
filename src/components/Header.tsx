@@ -43,7 +43,7 @@ const Header = () => {
             <Atom className="h-7 w-7 text-primary transition-transform group-hover:scale-110" />
             <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity" />
           </div>
-          <span className="font-bold text-lg gradient-text">ChemPhD</span>
+          <span className="font-bold text-lg gradient-text">Jeta Lica</span>
         </Link>
 
         {/* Desktop Navigation */}

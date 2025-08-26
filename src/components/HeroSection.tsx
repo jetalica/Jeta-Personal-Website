@@ -12,19 +12,13 @@ const HeroSection = () => {
   const contactLinks = [
     { 
       name: 'Email', 
-      href: 'mailto:your.email@university.edu', 
+      href: 'mailto:jetalica@gmail.com', 
       icon: Mail,
       color: 'text-chemistry-orange hover:text-chemistry-orange/80'
     },
     { 
-      name: 'GitHub', 
-      href: 'https://github.com/yourusername', 
-      icon: Github,
-      color: 'text-foreground hover:text-primary'
-    },
-    { 
       name: 'LinkedIn', 
-      href: 'https://linkedin.com/in/yourprofile', 
+      href: 'https://www.linkedin.com/in/jetalica/', 
       icon: Linkedin,
       color: 'text-molecular hover:text-molecular/80'
     },
@@ -40,21 +34,20 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
           <div className="fade-in">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
-              <span className="gradient-text">Industrial &</span>
-              <br />
-              <span className="text-foreground">Environmental</span>
-              <br />
-              <span className="gradient-text">Chemistry</span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-tight">
+              <span className="gradient-text">Jeta Lica</span>
             </h1>
+            <div className="text-2xl md:text-3xl font-semibold text-foreground/90 leading-tight mb-6">
+              <span>Industrial & Environmental Chemistry</span>
+            </div>
           </div>
 
           {/* Tagline */}
           <div className="slide-up" style={{ animationDelay: '0.2s' }}>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-              Advancing sustainable chemical processes through innovative research in 
-              <span className="text-accent font-medium"> green chemistry</span> and 
-              <span className="text-molecular font-medium"> environmental solutions</span>
+            Applying  
+              <span className="text-accent font-medium"> green chemistry</span> to turn resources into sustainable solutions, building a stronger and more 
+              <span className="text-molecular font-medium"> resilient future.</span> ♻️
             </p>
           </div>
 

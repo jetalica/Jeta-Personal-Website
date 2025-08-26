@@ -1,88 +1,57 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ExternalLink, Github, Calendar, Users, Beaker, Lightbulb, Recycle, Zap } from 'lucide-react';
+import { ExternalLink, Github, Calendar, Users, Beaker, Lightbulb, Recycle, Zap, Gem, Leaf, Mail } from 'lucide-react';
 
 const OtherProjects = () => {
   const projects = [
     {
-      title: "Microplastic Detection in Water Systems",
-      description: "Development of rapid detection methods for microplastics in aquatic environments using spectroscopic techniques.",
-      period: "2023 - Present",
-      status: "Active",
-      type: "Environmental",
-      technologies: ["FTIR Spectroscopy", "Machine Learning", "Water Analysis"],
-      icon: Recycle,
-      color: "text-accent",
-      highlights: [
-        "Developed AI-powered detection algorithm",
-        "99.2% accuracy in microplastic identification",
-        "Field testing in 5 water treatment facilities"
-      ]
-    },
-    {
-      title: "Solar-Driven Chemical Synthesis",
-      description: "Investigating photocatalytic processes for sustainable organic synthesis using solar energy.",
-      period: "2022 - 2023",
+      title: "F-HAp Nanomaterials for Dental Applications",
+      description: "Novel Innovative Fluorohydroxyapatite-Based Nanomaterials for Dental Applications",
+      period: "January 2023 - December 2024",
       status: "Completed",
-      type: "Green Chemistry",
-      technologies: ["Photocatalysis", "Solar Energy", "Organic Synthesis"],
-      icon: Zap,
-      color: "text-chemistry-orange",
-      highlights: [
-        "20% improvement in reaction efficiency",
-        "Zero-waste synthetic pathways developed",
-        "Published in Green Chemistry Journal"
-      ]
-    },
-    {
-      title: "Biocatalyst Engineering for Industrial Applications",
-      description: "Protein engineering of enzymes for enhanced stability and activity in harsh industrial conditions.",
-      period: "2021 - 2022",
-      status: "Completed",
-      type: "Biotechnology",
-      technologies: ["Protein Engineering", "Enzyme Kinetics", "Bioprocessing"],
-      icon: Beaker,
-      color: "text-molecular",
-      highlights: [
-        "Engineered thermostable enzyme variants",
-        "50% cost reduction in production",
-        "Patent application filed"
-      ]
-    },
-    {
-      title: "Smart Sensors for Air Quality Monitoring",
-      description: "Development of low-cost, real-time sensors for monitoring industrial air pollutants.",
-      period: "2020 - 2021",
-      status: "Completed",
-      type: "Environmental Tech",
-      technologies: ["IoT Sensors", "Data Analytics", "Environmental Monitoring"],
-      icon: Lightbulb,
+      type: "Dental Materials",
+      technologies: ["Thermal Analysis (TG/DSC)", "Gas Adsorption for Surface Area & Porosity", "Wet and Solid-State Synthesis of Hydroxyapatite (HA)"],
+      icon: Gem,
       color: "text-primary",
       highlights: [
-        "Sub-ppm detection sensitivity achieved",
-        "Network of 50+ sensors deployed",
-        "Real-time monitoring dashboard created"
+        "Gained specialised training in thermal analysis and gas adsorption methods",
+        "Optimised HA synthesis for improved purity, crystallinity, surface area, and porosity",
+        "Successfully substituted cations and anions in HA to enhance solubility and mechanical properties"
       ]
-    }
+    },
+    {
+      title: "Extraction of Medicinal Plants and Impregnation of Antimicrobial Extracts in Dental Prostheses",
+      description: "Development of pressurized techniques for the extraction of medicinal plants and the impregnation of antimicrobial extracts in dental prostheses.",
+      period: "August 2023 - July 2024",
+      status: "Completed",
+      type: "Green Chemistry",
+      technologies: ["Thermal Analysis (TG/DSC)", "Gas Chromatography (GC-FID)", "CO₂-Based Extraction and Impregnation", "Kinetic and Yield Studies"],
+      icon: Leaf,
+      color: "text-green-500",
+      highlights: [
+        "Near critical liquid CO₂-based extraction of medicinal plants",
+        "Analysed chemical composition of extracts by GC-FID",
+        "Impregnation of PMMA dental discs with the obtained extracts",
+        "Conducted yield determination and kinetic studies of the extraction of medicinal plants and the impregnation of PMMA discs"
+      ]
+    },
+
+
   ];
 
   const collaborations = [
     {
-      title: "Industry Partnership with ChemCorp",
-      description: "Collaborative research on sustainable process optimization",
-      duration: "6 months"
-    },
-    {
-      title: "International Research Exchange",
-      description: "Visiting researcher at European Green Chemistry Institute",
-      duration: "3 months"
-    },
-    {
-      title: "Startup Consulting",
-      description: "Technical advisor for cleantech startup focusing on water treatment",
+      title: "Industry Partnership with Agrosistemi Srl",
+      description: "Collaborative research on the hydrothermal treatment of sewage sludge and implementation of circular practices in using waste as secondary raw materials",
       duration: "Ongoing"
-    }
+    },
+    {
+      title: "Academic Partnership with Ivodent Academy",
+      description: "Part of the Research team at the Center of Techniques Studies",
+      duration: "Ongoing"
+    },
+
   ];
 
   return (
@@ -166,43 +135,73 @@ const OtherProjects = () => {
                     </div>
                     
                     {/* Action Buttons */}
-                    <div className="pt-4">
-                      <Button 
-                        size="sm" 
-                        variant="outline" 
-                        className="w-full"
-                        onClick={() => {
-                          // TODO: Implement project details modal or navigation
-                          console.log(`Viewing details for: ${project.title}`);
-                        }}
-                      >
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        View Details
-                      </Button>
-                    </div>
+                    {project.title !== "Extraction of Medicinal Plants and Impregnation of Antimicrobial Extracts in Dental Prostheses" && (
+                      <div className="pt-4">
+                        <Button 
+                          size="sm" 
+                          variant="outline" 
+                          className="w-full"
+                          onClick={() => {
+                            if (project.title === "F-HAp Nanomaterials for Dental Applications") {
+                              window.open("https://www.sciencedirect.com/science/article/abs/pii/S0109564123002683?via%3Dihub", "_blank");
+                            } else {
+                              // TODO: Implement project details modal or navigation for other projects
+                              console.log(`Viewing details for: ${project.title}`);
+                            }
+                          }}
+                        >
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          {project.title === "F-HAp Nanomaterials for Dental Applications" ? "View Paper" : "View Details"}
+                        </Button>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               ))}
             </div>
 
             {/* Collaborations Section */}
-            <div>
-              <h2 className="text-3xl font-bold mb-8 text-center">
+            <div className="py-16">
+              <h2 className="text-4xl font-bold mb-12 text-center">
                 <span className="gradient-text">Collaborations</span> & Partnerships
               </h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
                 {collaborations.map((collab, index) => (
-                  <Card key={collab.title} className="chemistry-card text-center">
-                    <CardContent className="p-6">
-                      <div className="mb-4">
-                        <Users className="h-8 w-8 text-molecular mx-auto" />
+                  <Card key={collab.title} className="chemistry-card h-full">
+                    <CardContent className="p-8">
+                      <div className="mb-6">
+                        <Users className="h-12 w-12 text-molecular mx-auto" />
                       </div>
-                      <h3 className="font-semibold mb-2 text-foreground">{collab.title}</h3>
-                      <p className="text-sm text-muted-foreground mb-3">{collab.description}</p>
-                      <Badge variant="outline" className="text-xs">
-                        {collab.duration}
-                      </Badge>
+                      <h3 className="font-bold text-xl mb-4 text-foreground text-center">{collab.title}</h3>
+                      <p className="text-base text-muted-foreground mb-6 text-center leading-relaxed">{collab.description}</p>
+                      <div className="text-center mb-6">
+                        <Badge variant="outline" className="text-sm px-4 py-2">
+                          {collab.duration}
+                        </Badge>
+                      </div>
+                      {collab.title === "Industry Partnership with Agrosistemi Srl" && (
+                        <Button 
+                          size="lg" 
+                          variant="outline" 
+                          className="w-full"
+                          onClick={() => window.open("https://www.agrosistemi.it/", "_blank")}
+                        >
+                          <ExternalLink className="h-5 w-5 mr-2" />
+                          Visit Partner
+                        </Button>
+                      )}
+                      {collab.title === "Academic Partnership with Ivodent Academy" && (
+                        <Button 
+                          size="lg" 
+                          variant="outline" 
+                          className="w-full"
+                          onClick={() => window.open("https://ivodent.edu.al/", "_blank")}
+                        >
+                          <ExternalLink className="h-5 w-5 mr-2" />
+                          Visit Partner
+                        </Button>
+                      )}
                     </CardContent>
                   </Card>
                 ))}
@@ -216,8 +215,16 @@ const OtherProjects = () => {
                 I'm always open to discussing new research opportunities and collaborative projects 
                 in environmental chemistry and green technology.
               </p>
-              <Button size="lg" className="bg-primary hover:bg-primary-hover">
-                <ExternalLink className="mr-2 h-5 w-5" />
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary-hover"
+                onClick={() => {
+                  const subject = encodeURIComponent("Invitation for collaboration");
+                  const body = encodeURIComponent("Hello Jeta,\n\nI would like to discuss potential collaboration opportunities with you.\n\nBest regards,");
+                  window.open(`mailto:jetalica@gmail.com?subject=${subject}&body=${body}`, "_blank");
+                }}
+              >
+                <Mail className="mr-2 h-5 w-5" />
                 Get in Touch
               </Button>
             </div>

@@ -5,40 +5,39 @@ import { Calendar, MapPin, Users, Target, BookOpen, ExternalLink } from 'lucide-
 
 const PhDProject = () => {
   const projectDetails = {
-    title: "Green Catalytic Processes for Industrial Waste Remediation",
-    subtitle: "Developing sustainable catalytic systems for environmental applications",
-    duration: "2021 - 2025",
-    location: "University Research Center",
-    supervisor: "Prof. Dr. Environmental Chemistry",
+    title: "Recovery of Phosphorus from Sewage Sludge Undergoing Hydrothermal Treatment.",
+    subtitle: "From phosphorous removal to phosphorous circularity.",
+    duration: "2024-2027",
+    location: "Università degli Studi di Bari Aldo Moro",
+    supervisor: "Prof. Michele Zema",
     status: "In Progress"
   };
 
   const objectives = [
-    "Design novel green catalysts for industrial waste treatment",
-    "Optimize reaction conditions for maximum efficiency",
-    "Evaluate environmental impact and sustainability metrics",
-    "Scale laboratory findings to pilot plant operations"
+    "Characterisation of waste materials to understand their potential for resource recovery or use as whole.",
+    "Use of adapted separation techniques to extract elements of interest from waste. In particular, develop efficient, sustainable, and cost-effective ways to maximise phosphorus recovery.",
+    "Transform waste and/or recovered elements into secondary raw materials with applications in various fields such as building materials, environmental and agricultural etc."
   ];
 
   const methodology = [
     {
       phase: "Literature Review & Theoretical Framework",
-      description: "Comprehensive analysis of existing catalytic systems and identification of research gaps",
+      description: "Study of the state of the art on waste, including its current uses, the recovery of valuable elements and their applications, followed by identification of innovation opportunities where knowledge gaps exist.",
       status: "Completed"
     },
     {
-      phase: "Catalyst Design & Synthesis",
-      description: "Development of novel catalytic materials using green chemistry principles",
-      status: "In Progress"
-    },
-    {
-      phase: "Performance Evaluation",
-      description: "Testing catalytic efficiency under various industrial conditions",
+      phase: "Physical and Chemical Characterization of waste",
+      description: "Characterization of waste properties using advanced chemical and physical characterization methods in order to validate them.",
       status: "Ongoing"
     },
     {
-      phase: "Scale-up Studies",
-      description: "Pilot plant testing and industrial feasibility assessment",
+      phase: "Extraction of valuable elements",
+      description: "Develop efficient and sustainable ways to extract phosphorus and other elements of interest using adapted industrial processes, supported by data-driven optimisation.",
+      status: "In Progress"
+    },
+    {
+      phase: "Implementation of Circular Practices",
+      description: "Development of a framework for integrating recovered phosphorus and synthesised materials back into industrial and agricultural cycles, in cooperation with industry. Conduct life cycle assessment (LCA) to evaluate the environmental benefits and economic feasibility of circular practices.",
       status: "Planned"
     }
   ];
@@ -61,7 +60,9 @@ const PhDProject = () => {
               {projectDetails.status}
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="gradient-text">{projectDetails.title}</span>
+              <span className="gradient-text">Recovery of Phosphorus from Sewage</span>
+              <br />
+              <span className="gradient-text">Sludge Undergoing Hydrothermal Treatment.</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               {projectDetails.subtitle}
@@ -75,7 +76,7 @@ const PhDProject = () => {
               </div>
               <div className="flex items-center justify-center space-x-2 text-muted-foreground">
                 <MapPin className="h-5 w-5" />
-                <span>{projectDetails.location}</span>
+                <span className="whitespace-nowrap">{projectDetails.location}</span>
               </div>
               <div className="flex items-center justify-center space-x-2 text-muted-foreground">
                 <Users className="h-5 w-5" />
@@ -154,7 +155,8 @@ const PhDProject = () => {
               </CardContent>
             </Card>
 
-            {/* Key Findings */}
+            {/* Key Findings - Hidden for now, visible in code for future updates */}
+            {/* 
             <Card className="chemistry-card">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
@@ -177,6 +179,7 @@ const PhDProject = () => {
                 </div>
               </CardContent>
             </Card>
+            */}
 
           </div>
         </div>
